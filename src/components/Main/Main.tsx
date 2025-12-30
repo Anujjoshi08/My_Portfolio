@@ -14,6 +14,7 @@ import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import mysqlIcon from "../../assets/mysql-icon.svg";
 import githubIcon from "../../assets/github-white.svg";
+import githubIconGreen from "../../assets/github-green.svg";
 import cIcon from "../../assets/c-icon.svg";
 import cppIcon from "../../assets/cpp-icon.svg";
 import tailwindIcon from "../../assets/icons8-tailwind-css.svg";
@@ -21,11 +22,30 @@ import gitIcon from "../../assets/git-icon.svg";
 import mongodbIcon from "../../assets/mongodb-icon.svg";
 import expressIcon from "../../assets/express-icon.svg";
 import vercelIcon from "../../assets/vercel-icon.svg";
+import { useEffect, useState } from 'react'
 
 export function Main() {
+  const [isLightMode, setIsLightMode] = useState(false)
+  const [currentGithubIcon, setCurrentGithubIcon] = useState(githubIcon)
+
+  useEffect(() => {
+    const checkTheme = () => {
+      const isLight = document.documentElement.classList.contains('light')
+      setIsLightMode(isLight)
+      setCurrentGithubIcon(isLight ? githubIconGreen : githubIcon)
+    }
+    
+    checkTheme()
+    const observer = new MutationObserver(checkTheme)
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+    
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <Container>
       <Particles
+        key={isLightMode ? 'light' : 'dark'}
         id="tsparticles"
         options={{
           "fullScreen": {
@@ -165,7 +185,7 @@ export function Main() {
                 { "src": expressIcon, "width": 20, "height": 20 },
                 { "src": tailwindIcon, "width": 20, "height": 20 },
                 { "src": gitIcon, "width": 20, "height": 20 },
-                { "src": githubIcon, "width": 20, "height": 20 },
+                { "src": currentGithubIcon, "width": 20, "height": 20 },
                 { "src": mysqlIcon, "width": 20, "height": 20 },
                 { "src": mongodbIcon, "width": 20, "height": 20 },
                 { "src": cIcon, "width": 20, "height": 20 },

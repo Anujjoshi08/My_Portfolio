@@ -5,9 +5,25 @@ import Illustration from "../../assets/illustration.svg"
 import { NavHashLink } from "react-router-hash-link"
 import linkedin from '../../assets/linkedin.svg'
 import githubIcon from '../../assets/github-white.svg'
+import githubIconGreen from '../../assets/github-green.svg'
 import Hello from '../../assets/Hello.gif'
+import { useEffect, useState } from 'react'
 
 export function Hero() {
+  const [isLightMode, setIsLightMode] = useState(false)
+
+  useEffect(() => {
+    const checkTheme = () => {
+      setIsLightMode(document.documentElement.classList.contains('light'))
+    }
+    
+    checkTheme()
+    const observer = new MutationObserver(checkTheme)
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+    
+    return () => observer.disconnect()
+  }, [])
+
   const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -52,7 +68,7 @@ export function Hero() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={githubIcon} alt="GitHub" />
+              <img src={isLightMode ? githubIconGreen : githubIcon} alt="GitHub" />
             </a>
             
 
