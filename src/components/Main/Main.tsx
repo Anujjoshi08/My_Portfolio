@@ -16,7 +16,7 @@ import mysqlIcon from "../../assets/mysql-icon.svg";
 import githubIcon from "../../assets/github-white.svg";
 import cIcon from "../../assets/c-icon.svg";
 import cppIcon from "../../assets/cpp-icon.svg";
-import tailwindIcon from "../../assets/tailwind-icon.svg";
+import tailwindIcon from "../../assets/icons8-tailwind-css.svg";
 import gitIcon from "../../assets/git-icon.svg";
 import mongodbIcon from "../../assets/mongodb-icon.svg";
 import expressIcon from "../../assets/express-icon.svg";

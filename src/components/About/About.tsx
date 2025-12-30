@@ -6,13 +6,13 @@ import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
+// import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import mysqlIcon from "../../assets/mysql-icon.svg";
 import githubIcon from "../../assets/github-white.svg";
 import cIcon from "../../assets/c-icon.svg";
 import cppIcon from "../../assets/cpp-icon.svg";
-import tailwindIcon from "../../assets/tailwind-icon.svg";
+import tailwindIcon from "../../assets/icons8-tailwind-css.svg";
 import gitIcon from "../../assets/git-icon.svg";
 import mongodbIcon from "../../assets/mongodb-icon.svg";
 import expressIcon from "../../assets/express-icon.svg";
@@ -72,13 +72,6 @@ export function About() {
               <span className="tooltip">TypeScript</span>
             </motion.div>
           </div>
-          <div className="hability">
-            <motion.div {...fadeUp(2.2)}>
-              <img src={vueIcon} alt="Vue" />
-              <span className="tooltip">Vue</span>
-            </motion.div>
-          </div>
-         
           
           <div className="hability">
             <motion.div {...fadeUp(2.4)}>
@@ -107,7 +100,7 @@ export function About() {
           <div className="hability">
             <motion.div {...fadeUp(3.2)}>
               <img src={expressIcon} alt="Express" />
-              <span className="tooltip">Express</span>
+              <span className="tooltip">Express.js</span>
             </motion.div>
           </div>
           <div className="hability">
@@ -160,11 +153,7 @@ export function About() {
           </div>
         </div>
       </div>
-      {/* <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.21 * 1000}>
-          <img src={VinayakSingh} alt="Vinayak Singh" />
-        </ScrollAnimation>
-      </div> */}
+     
     </Container>
   )
 }
