@@ -78,6 +78,10 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: var(--black);
     color: #FFFF;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
   }
 
   body, input, textarea, button{
@@ -87,6 +91,15 @@ export const GlobalStyle = createGlobalStyle`
 
   a{
     text-decoration: none;
+  }
+
+  img{
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
   }
 
   button, .button{
