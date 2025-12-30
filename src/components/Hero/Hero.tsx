@@ -1,71 +1,68 @@
 import { BrowserRouter } from "react-router-dom"
 import { Container } from "./styles"
-import ScrollAnimation from "react-animate-on-scroll"
+import { motion } from "framer-motion"
 import Illustration from "../../assets/illustration.svg"
 import { NavHashLink } from "react-router-hash-link"
 import linkedin from '../../assets/linkedin.svg'
 import githubIcon from '../../assets/github-white.svg'
-import whatsapp from '../../assets/whatsapp.svg'
 import Hello from '../../assets/Hello.gif'
-import telegram from '../../assets/telegram.svg'
+
 export function Hero() {
+  const fadeUp = (delay = 0) => ({
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, delay },
+  })
+  const fadeRight = (delay = 0) => ({
+    initial: { opacity: 0, x: 40 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 0.6, delay },
+  })
+
   return (
     <Container id="home">
       <div className="hero-text">
-        <ScrollAnimation animateIn="fadeInUp">
+        <motion.div {...fadeUp(0)}>
           <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Anuj Joshi</h1>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Full Stack Developer</h3>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">Fresher</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
+        </motion.div>
+
+        <motion.h1 {...fadeUp(0.2)}>Anuj Joshi</motion.h1>
+
+        <motion.h3 {...fadeUp(0.4)}>Full Stack Developer | MERN Stack Developer</motion.h3>
+
+        <motion.p className="small-resume" {...fadeUp(0.6)}></motion.p>
+
+        <motion.div {...fadeUp(0.8)}>
           <BrowserRouter>
             <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
           </BrowserRouter>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
-      <div className="social-media"><a
-        href="https://www.linkedin.com/in/anujjoshi08/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img src={linkedin} alt="Linkedin" />
-      </a>
-        <a
-          href="https://github.com/Anujjoshi08"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={githubIcon} alt="GitHub" />
-        </a>
-        {/* <a
-          href="https://api.whatsapp.com/send/?phone=%2B919630576848&text=Hello+Vinayak+I+found+your+contact+through+portfolio+site.%0A%0A"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={whatsapp} alt="Whatsapp" />
-        </a> */}
-        {/* <a
-          href="https://t.me/CodeVinayak"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={telegram} alt="telegram" />
-        </a> */}
+        </motion.div>
 
-        </div>
-        </ScrollAnimation>
+        <motion.div {...fadeUp(1)}>
+          <div className="social-media">
+            <a
+              href="https://www.linkedin.com/in/anujjoshi08/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedin} alt="Linkedin" />
+            </a>
+            <a
+              href="https://github.com/Anujjoshi08"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={githubIcon} alt="GitHub" />
+            </a>
+            
+
+          </div>
+        </motion.div>
       </div>
       <div className="hero-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
+        <motion.div {...fadeRight(1)}>
           <img src={Illustration} alt="Ilustração" />
-        </ScrollAnimation>
+        </motion.div>
       </div>
     </Container>
   )
