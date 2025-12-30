@@ -205,10 +205,11 @@ export function Project() {
             <div className="body">
               <h3>Netflix_Clone</h3>
               <p>
-                 Netflix-style streaming clone with React, and
-                Tailwind CSS featuring hero banners, category rows, hover
-                previews, and responsive layouts that feel close to the real
-                experience.
+                Netflix-style streaming clone with React, and Tailwind CSS
+                featuring hero banners, category rows, hover previews, and
+                responsive layouts that feel close to the real experience. Built
+                with modern design patterns to deliver a seamless viewing interface
+                across all devices.
               </p>
             </div>
             <footer>
