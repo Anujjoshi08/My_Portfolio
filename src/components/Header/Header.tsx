@@ -36,7 +36,7 @@ export function Header() {
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          <a href="https://drive.google.com/file/d/1L9UZGFnuud6u-EzaGisI9uIWAGhVPzyI/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
+          <a href="https://drive.google.com/file/d/1-qjn82isWeiFh7ncUI_Lw60HDgI1CBKM/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
             Resume
           </a>
         </nav>
