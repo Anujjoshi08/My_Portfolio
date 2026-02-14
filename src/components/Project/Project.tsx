@@ -115,7 +115,8 @@ export function Project() {
               <ul className="tech-list">
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>React JS</li>
+                <li>React.js</li>
+                <li>Node.js</li>
               </ul>
             </footer>
           </div>
@@ -163,9 +164,11 @@ export function Project() {
             <footer>
               <ul className="tech-list">
                 <li>HTML</li>
-                <li>Tailwindcss</li>
-                <li>React JS</li>
+                <li>Tailwind CSS</li>
                 <li>TypeScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                
               </ul>
             </footer>
           </div>
@@ -216,7 +219,61 @@ export function Project() {
               <ul className="tech-list">
                 <li>HTML</li>
                 <li>SCSS</li>
-                <li>React JS</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                {/* <li></li> */}
+              </ul>
+            </footer>
+          </div>
+        </motion.div>
+        
+        <motion.div {...fadeUp(0.3)} className="project-item">
+          <div className="project">
+            <header>
+              <svg
+                width="50"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <title>Folder</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a
+                  href="https://github.com/Anujjoshi08/Task-Manager"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="https://task-manager-ten-cyan.vercel.app/" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Task Manager</h3>
+              <p>
+                A responsive task management application built with React and Tailwind CSS.
+                Features include task creation, editing, deletion, and status tracking.
+                Designed with a clean UI and intuitive user experience for efficient task organization.
+                across all devices.
+              </p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>HTML</li>
+                <li>Tailwind CSS</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
                 {/* <li></li> */}
               </ul>
             </footer>
