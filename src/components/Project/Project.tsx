@@ -147,7 +147,7 @@ export function Project() {
                 >
                   <img src={githubIcon} alt="Visit site" />
                 </a>
-                <a href="https://my-portfolio-72rrty8uz-anuj-joshis-projects-bf06f519.vercel.app/" target="_blank" rel="noreferrer">
+                <a href="https://my-portfolio-5asqpyfvw-anuj-joshis-projects-bf06f519.vercel.app/" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
