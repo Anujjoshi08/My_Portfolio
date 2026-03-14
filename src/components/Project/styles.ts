@@ -26,7 +26,8 @@ export const Container = styled.section`
       flex-direction: column;
       height: 100%;
       color: #FFF;
-      &:hover{
+      cursor: pointer;
+      &:hover, &:active{
         transform: translateY(-5px);
         background-color: var(--green);
         footer {
@@ -87,14 +88,75 @@ export const Container = styled.section`
   }
 
   @media (max-width: 960px){
+    margin-top: 10rem;
+
+    h2 {
+      font-size: 3.2rem;
+    }
+
     .projects{
       grid-template-columns: 1fr 1fr;
+      gap: 1.6rem;
     }
   }
 
   @media (max-width: 740px){
+    margin-top: 8rem;
+
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+
     .projects{
       grid-template-columns: 1fr;
+      gap: 1.4rem;
+      padding: 0 1rem;
+    }
+  }
+
+  @media (max-width: 480px){
+    margin-top: 6rem;
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .projects{
+      padding: 0 0.6rem;
+      gap: 1.2rem;
+
+      .project{
+        padding: 1.6rem 1.4rem;
+
+        header{
+          margin-bottom: 2rem;
+
+          a > img {
+            width: 3.8rem;
+          }
+        }
+
+        h3 {
+          font-size: 1.6rem;
+          margin-bottom: 1.2rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          letter-spacing: 0.08rem;
+          margin-bottom: 1.4rem;
+        }
+
+        footer {
+          .tech-list {
+            gap: 1rem;
+            font-size: 1.2rem;
+            flex-wrap: wrap;
+          }
+        }
+      }
     }
   }
 `
