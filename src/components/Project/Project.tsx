@@ -15,6 +15,66 @@ export function Project() {
       <h2>My Projects</h2>
       <div className="projects">
         <motion.div {...fadeUp(0.1)} className="project-item">
+  <div className="project">
+    <header>
+      <svg
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#ffffff"
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <title>Folder</title>
+        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+      </svg>
+
+      <div className="project-links">
+        <a
+          href="https://github.com/Anujjoshi08/image-gallery"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={githubIcon} alt="GitHub" />
+        </a>
+
+        <a
+          href="https://image-gallery-2-eight.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={externalLink} alt="Visit site" />
+        </a>
+      </div>
+    </header>
+
+    <div className="body">
+      <h3>React Image Gallery</h3>
+
+      <p>
+        Built a modern and responsive image gallery application using React.js
+        and Tailwind CSS. The project features image virtualization for better
+        performance, fullscreen preview modal, image selection, download with
+        watermark, and IndexedDB caching for faster loading and offline-like
+        experience.
+      </p>
+    </div>
+
+    <footer>
+      <ul className="tech-list">
+        <li>React.js</li>
+        <li>Tailwind CSS</li>
+        <li>JavaScript</li>
+        <li>IndexedDB</li>
+      </ul>
+    </footer>
+  </div>
+</motion.div>
+
+        <motion.div {...fadeUp(0.1)} className="project-item">
           <div className="project">
             <header>
               <svg
