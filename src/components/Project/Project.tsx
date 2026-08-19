@@ -14,9 +14,120 @@ export function Project() {
     <Container id="project">
       <h2>My Projects</h2>
       <div className="projects">
-        <motion.div {...fadeUp(0.1)} className="project-item">
-  <div className="project">
-    <header>
+
+        <motion.div {...fadeUp(0.3)} className="project-item">
+          <div className="project">
+            <header>
+              <svg
+                width="50"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <title>Folder</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a
+                  href="https://github.com/Anujjoshi08/Task-Manager"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="https://task-manager-ten-cyan.vercel.app/" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Task Manager</h3>
+              <p>
+                A responsive task management application built with React and Tailwind CSS.
+                Features include task creation, editing, deletion, and status tracking.
+                Designed with a clean UI and intuitive user experience for efficient task organization.
+                across all devices.
+              </p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                
+                {/* <li></li> */}
+              </ul>
+            </footer>
+          </div>
+        </motion.div>
+
+         <motion.div {...fadeUp(0.1)} className="project-item">
+          <div className="project">
+            <header>
+              <svg
+                width="50"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <title>Folder</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a
+                  href="https://github.com/Anujjoshi08/Chat-App"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={githubIcon} alt="GitHub" />
+                </a>
+                <a
+                  href="https://chatapp-frontend-r1cs.onrender.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Chat-App</h3>
+              <p>
+              I built a real-time chat application using React, Node.js, and Socket.io. It allows users to join rooms, send instant messages, and see notifications for new messages. The interface is clean, responsive, and built with Tailwind CSS.
+              </p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Socket.io</li>
+                <li>Cloudinary</li>
+                <li>MongoDB</li>
+                <li>JWT</li>
+                <li>Firebase</li>
+
+              </ul>
+            </footer>
+          </div>
+        </motion.div>
+
+  
+       <motion.div {...fadeUp(0.1)} className="project-item">
+     <div className="project">
+     <header>
       <svg
         width="50"
         xmlns="http://www.w3.org/2000/svg"
@@ -127,6 +238,8 @@ export function Project() {
             </footer>
           </div>
         </motion.div>
+      
+        
 
         <motion.div {...fadeUp(0.2)} className="project-item">
           <div className="project">
@@ -182,60 +295,7 @@ export function Project() {
           </div>
         </motion.div>
 
-        <motion.div {...fadeUp(0.3)} className="project-item">
-          <div className="project">
-            <header>
-              <svg
-                width="50"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-              <div className="project-links">
-                <a
-                  href="https://github.com/Anujjoshi08/My_Portfolio"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={githubIcon} alt="Visit site" />
-                </a>
-                <a href="https://my-portfolio-5asqpyfvw-anuj-joshis-projects-bf06f519.vercel.app/" target="_blank" rel="noreferrer">
-                  <img src={externalLink} alt="Visit site" />
-                </a>
-              </div>
-            </header>
-            <div className="body">
-              <h3>Portfolio</h3>
-              <p>
-                Portfolio site built with React, TypeScript, and Tailwind CSS,
-                focused on a minimal, responsive layout. It highlights projects
-                with interactive cards, smooth navigation, and clean sections
-                that present my work clearly across devices.
-              </p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>HTML</li>
-                <li>Tailwind CSS</li>
-                <li>TypeScript</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                
-              </ul>
-            </footer>
-          </div>
-        </motion.div>
-
-        
-        <motion.div {...fadeUp(0.3)} className="project-item">
+         <motion.div {...fadeUp(0.3)} className="project-item">
           <div className="project">
             <header>
               <svg
@@ -287,63 +347,6 @@ export function Project() {
           </div>
         </motion.div>
         
-        <motion.div {...fadeUp(0.3)} className="project-item">
-          <div className="project">
-            <header>
-              <svg
-                width="50"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-              <div className="project-links">
-                <a
-                  href="https://github.com/Anujjoshi08/Task-Manager"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={githubIcon} alt="Visit site" />
-                </a>
-                <a href="https://task-manager-ten-cyan.vercel.app/" target="_blank" rel="noreferrer">
-                  <img src={externalLink} alt="Visit site" />
-                </a>
-              </div>
-            </header>
-            <div className="body">
-              <h3>Task Manager</h3>
-              <p>
-                A responsive task management application built with React and Tailwind CSS.
-                Features include task creation, editing, deletion, and status tracking.
-                Designed with a clean UI and intuitive user experience for efficient task organization.
-                across all devices.
-              </p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>HTML</li>
-                <li>Tailwind CSS</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-                
-                {/* <li></li> */}
-              </ul>
-            </footer>
-          </div>
-        </motion.div>
-        
-      
-     
-       
 
       </div>
     </Container>
