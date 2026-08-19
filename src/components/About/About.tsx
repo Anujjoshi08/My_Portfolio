@@ -41,14 +41,20 @@ export function About() {
         </motion.p>
         <motion.div className="education" {...fadeUp(1)}>
           <h3>Education:</h3>
+
           <h4> Master of Computer Applications (MCA)</h4>
-          <p>JECRC University, Jaipur | July 2024 - Present</p>
-          <p>8.27 CGPA</p>
+          <p>JECRC University, Jaipur | July 2024 - July 2026</p>
+          <p>79.6 %</p>
+
+          <h4> Bachelor of Computer Applications (BCA)</h4>
+          <p>Sobhasaria Engineering College, Sikar | July 2021 - July 2024</p>
+          <p>74.8 %</p>
+
         </motion.div>
         <motion.div className="experience" {...fadeUp(1.2)}>
-           <h3>Internship:</h3><h4>Web Developer Intern</h4>
-          <p>LABMENTIX | May 2025 - July 2025</p>
-          <p>Bangalore(Remote), India</p>
+           <h3>Internship:</h3><h4>Fullstack Developer Intern</h4>
+          <p>Global IT Providers | February 2026 - June 2026</p>
+          <p>Jaipur(Remote), India</p>
         </motion.div>        
 
         <motion.h3 {...fadeUp(1.4)}>Here are my main skills:</motion.h3>
